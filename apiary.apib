@@ -1,0 +1,57 @@
+FORMAT: 1A
+HOST: http://localhost:5000
+
+# Satoshi App 
+
+## Register [/auth/register/]
+
+
+###Register a user [POST]
+
+
+
++ Request (application/json)
+
+        {
+            "email": "user@example.com",
+            "username": "user",
+            "password": "user@example.com",
+        }
+
++ Response 200 (application/json)
+
+    + Headers
+
+            
+
+    + Body
+
+            {
+                "email": "email",
+                "username": "username",
+            }
+## Login [/auth/login/]
+
+
+###Login a user [POST]
+
+
+
++ Request (application/json)
+
+        {
+            "email": "user@example.com",
+            "password": "user@example.com",
+        }
+
++ Response 200 (application/json)
+
+    + Headers
+
+            
+
+    + Body
+
+            {
+                "token": "token"
+            }
